@@ -75,11 +75,26 @@ UI를 구성하는 것이 목표입니다.
 - 12/12 제출 및 마감
 
 **사용 기술 및 도구**
+<!--
 - json api
 - visual Code
 - IDE
+DB 도구도 사용시 -> MySQL , PostgreSQL
+-->(공백 포함 173자)
+- 사용 언어 : JAVA
+- UI/UX : JavaFx Scene Builder OR JAVA Swing
+- IDE : Visual Studio, Visual Code, Eclipce
+- 빌드 도구 : Maven Or Gradle
+- 협업 도구 : Git Hub
+- API 통신 : REST API, JSON
 
 
-**기대 효과 및 마무리**
+
+**기대 효과 및 마무리** 
+<!--
 - 데이터베이스 구성, API 설계 및 사용, UI, UX 를 구성하는 경험을 쌓게 될 것 같습니다.
 - 완성 목표 : 학생들이 공부할 때 유용하게 쓰길 바랍니다.
+--> (공백 포함 227)
+- 기대효과 : 다양한 주요 기능을 구현하며 API 호출 및 JSON 파싱등을 통한 현직 사용 기술에 대한 지식 습득 및 UI/UX 구성을 통하여 프로그래머로서 능력 향상.
+             또한 데이터베이스도 구현하여 SQL 문도 애플리케이션 구현하게 된다. (데이터베이스 기능 구현 시)
+- 완성 목표 : 주요 기능들을 통한 편리함을 얻어 학생들이 유용하고 어려움 없이 학사 기능을 누린다.
