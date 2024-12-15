@@ -133,8 +133,4 @@ public class CalendarApp {
 
         noteFrame.setVisible(true);
     }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(CalendarApp::new);
-    }
 }
