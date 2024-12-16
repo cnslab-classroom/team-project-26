@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CalendarApp {
-    private JFrame frame;
+    private JPanel mainPanel;
     private JPanel calendarPanel;
     private JLabel monthYearLabel;
     private JButton prevButton, nextButton;
@@ -20,10 +20,7 @@ public class CalendarApp {
 
     public CalendarApp() {
         notesMap = new HashMap<>();
-        frame = new JFrame("Calendar with Notes");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(800, 600);
-        frame.setLayout(new BorderLayout());
+        mainPanel = new JPanel(new BorderLayout());
 
         LocalDate today = LocalDate.now();
         startYearMonth = YearMonth.of(today.getYear() - 2, 1);
@@ -45,14 +42,17 @@ public class CalendarApp {
         topPanel.add(monthYearLabel, BorderLayout.CENTER);
         topPanel.add(nextButton, BorderLayout.EAST);
 
-        frame.add(topPanel, BorderLayout.NORTH);
+        mainPanel.add(topPanel, BorderLayout.NORTH);
 
         // Calendar panel
         calendarPanel = new JPanel(new GridLayout(0, 7));
-        frame.add(calendarPanel, BorderLayout.CENTER);
+        mainPanel.add(calendarPanel, BorderLayout.CENTER);
 
         updateCalendar();
-        frame.setVisible(true);
+    }
+
+    public JPanel getMainPanel() {
+        return mainPanel;
     }
 
     private void updateCalendar() {
